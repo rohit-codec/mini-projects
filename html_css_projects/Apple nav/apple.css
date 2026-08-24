@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:system-ui,-apple-system,sans-serif;
+    background:#f5f5f7;
+}
+
+/* Navbar */
+nav{
+    background:white;
+    border-bottom:1px solid #e5e5e5;
+    display:flex;
+    justify-content:center;
+    padding:14px 0;
+}
+
+.nav-content{
+    width:90%;
+    max-width:1100px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.menu{
+    display:flex;
+    gap:32px;
+}
+
+.buttons{
+    display:flex;
+    gap:12px;
+}
+
+.btn-blue,
+.btn-black{
+    padding:10px 22px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+}
+
+.btn-blue{
+    background:#0071e3;
+    color:white;
+}
+
+.btn-black{
+    background:#1d1d1f;
+    color:white;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#333;
+    font-size:15px;
+}
+
+.menu a:hover{
+    color:#0071e3;
+}
+
+.buttons{
+    display:flex;
+    gap:10px;
+}
+
+.btn-blue{
+    background:#0071e3;
+    color:white;
+    padding:8px 20px;
+    font-size:14px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.btn-black{
+    background:#1d1d1f;
+    color:white;
+    padding:8px 20px;
+    font-size:14px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.btn-blue:hover{
+    background:#005bb5;
+}
+
+.btn-black:hover{
+    background:#000;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+    .nav-content{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .menu{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .buttons{
+        justify-content:center;
+    }
+}
