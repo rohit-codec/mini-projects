@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #eef2f7;
+
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 14px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 25px;
+}
+
+#display {
+    font-size: 55px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 25px;
+}
+
+.buttons {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+button {
+    padding: 10px 16px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #111827;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+button:hover {
+    background: #374151;
+}
+
+#pauseBtn {
+    background: #6b7280;
+}
+
+#lapBtn {
+    background: #2563eb;
+}
+
+#resetBtn {
+    background: #dc2626;
+}
+
+
+/* ---------------- LAPS ---------------- */
+
+.lap-container {
+    margin-top: 30px;
+
+    border-top: 1px solid #ddd;
+
+    padding-top: 20px;
+}
+
+.lap-container h2 {
+    font-size: 20px;
+
+    margin-bottom: 12px;
+}
+
+#lapList {
+    list-style: none;
+
+    max-height: 200px;
+
+    overflow-y: auto;
+}
+
+#lapList li {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 9px 5px;
+
+    border-bottom: 1px solid #eee;
+
+    font-size: 14px;
+}
+
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 450px) {
+
+    .container {
+        padding: 22px;
+    }
+
+    #display {
+        font-size: 40px;
+    }
+
+}
