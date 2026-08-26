@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f4f4f4;
+    color: #222;
+
+    transition: 0.3s;
+}
+
+.container {
+    width: 400px;
+
+    padding: 35px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.5;
+    color: #555;
+}
+
+button {
+    padding: 10px 18px;
+
+    margin-bottom: 25px;
+
+    border: none;
+    border-radius: 7px;
+
+    background-color: #222;
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+/* ---------------- DARK MODE ---------------- */
+
+body.dark {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark .container {
+    background-color: #1f1f1f;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+body.dark p {
+    color: #ccc;
+}
+
+body.dark button {
+    background-color: white;
+    color: #222;
+}
