@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile Card Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Form Section -->
+        <div class="form-container">
+
+            <h1>Create Profile Card</h1>
+
+            <form id="profileForm">
+
+                <div class="input-group">
+                    <label for="photo">Profile Photo Link</label>
+                    <input
+                        type="url"
+                        id="photo"
+                        placeholder="https://example.com/photo.jpg"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="example@gmail.com"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="contact">Contact</label>
+                    <input
+                        type="tel"
+                        id="contact"
+                        placeholder="9876543210"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="occupation">Occupation</label>
+                    <input
+                        type="text"
+                        id="occupation"
+                        placeholder="Web Developer"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="description">Description</label>
+                    <textarea
+                        id="description"
+                        placeholder="Write something about yourself..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit">
+                    Create Profile
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- Cards Section -->
+        <div class="cards-container" id="cardsContainer">
+
+            <!-- Cards will be created here using JavaScript -->
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

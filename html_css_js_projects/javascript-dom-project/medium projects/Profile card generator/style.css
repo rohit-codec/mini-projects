@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eef2f7;
+    padding:30px 15px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+/* ---------- FORM ---------- */
+
+.form-container{
+    width:100%;
+    max-width:420px;
+    margin:0 auto 35px;
+    background:#fff;
+    padding:22px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.form-container h1{
+    text-align:center;
+    font-size:24px;
+    margin-bottom:18px;
+}
+
+.input-group{
+    margin-bottom:14px;
+}
+
+.input-group label{
+    display:block;
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:6px;
+}
+
+.input-group input,
+.input-group textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+    font-size:14px;
+}
+
+.input-group textarea{
+    height:80px;
+    resize:none;
+}
+
+.input-group input:focus,
+.input-group textarea:focus{
+    border-color:#222;
+}
+
+button{
+    width:100%;
+    padding:11px;
+    background:#111827;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    font-size:15px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1f2937;
+}
+
+/* ---------- CARDS ---------- */
+
+.heading{
+    margin-bottom:18px;
+    text-align:center;
+    color:#222;
+}
+
+.cards-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,260px));
+    justify-content:center;
+    gap:22px;
+}
+
+.profile-card{
+    width:260px;
+    min-height:380px;
+    background:#fff;
+    border-radius:14px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.profile-card:hover{
+    transform:translateY(-5px);
+}
+
+.profile-card img{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #ddd;
+    margin-bottom:12px;
+}
+
+.profile-card h2{
+    font-size:20px;
+    margin-bottom:4px;
+}
+
+.occupation{
+    color:#6b7280;
+    font-size:14px;
+    margin-bottom:12px;
+}
+
+.info{
+    text-align:left;
+    font-size:13px;
+    margin-bottom:12px;
+}
+
+.info p{
+    margin:6px 0;
+    word-break:break-word;
+}
+
+.description{
+    border-top:1px solid #e5e7eb;
+    padding-top:10px;
+    font-size:13px;
+    color:#555;
+    line-height:1.4;
+    text-align:left;
+}
