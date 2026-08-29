@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    transition: background-color 0.3s, color 0.3s;
+    
+}
+
+/* Light Mode */
+body.light {
+    background-color: #ffffff;
+    color: #222222;
+}
+
+/* Dark Mode */
+body.dark {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    padding: 40px;
+
+    text-align: center;
+
+    border-radius: 12px;
+}
+
+.container h1 {
+    margin-bottom: 15px;
+}
+
+.container p {
+    line-height: 1.6;
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px 24px;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* Button in Light Mode */
+body.light button {
+    background-color: #222222;
+    color: white;
+}
+
+/* Button in Dark Mode */
+body.dark button {
+    background-color: white;
+    color: #222222;
+}
+
+button:hover {
+    opacity: 0.8;
+}
