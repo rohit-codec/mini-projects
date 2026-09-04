@@ -8,7 +8,7 @@ const resetBtn = document.querySelector("#resetBtn");
 const lapList = document.querySelector("#lapList");
 
 
-let milliseconds = 0;
+let seconds = 0;
 let interval = null;
 let lapNumber = 0;
 
@@ -24,11 +24,11 @@ startBtn.addEventListener("click", function () {
 
     interval = setInterval(function () {
 
-        milliseconds++;
+        seconds++;
 
         updateDisplay();
 
-    }, 10);
+    }, 1000);
 
 });
 
@@ -75,7 +75,7 @@ resetBtn.addEventListener("click", function () {
 
     interval = null;
 
-    milliseconds = 0;
+    seconds = 0;
 
     lapNumber = 0;
 
@@ -99,15 +99,13 @@ function updateDisplay() {
 
 function formatTime() {
 
-    const totalSeconds = Math.floor(milliseconds / 100);
-
-    const hours = Math.floor(totalSeconds / 3600);
+    const hours = Math.floor(seconds / 3600);
 
     const minutes =
-        Math.floor((totalSeconds % 3600) / 60);
+        Math.floor((seconds % 3600) / 60);
 
-    const seconds =
-        totalSeconds % 60;
+    const remainingSeconds =
+        seconds % 60;
 
 
     const formattedHours =
@@ -117,7 +115,7 @@ function formatTime() {
         String(minutes).padStart(2, "0");
 
     const formattedSeconds =
-        String(seconds).padStart(2, "0");
+        String(remainingSeconds).padStart(2, "0");
 
 
     return `${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
