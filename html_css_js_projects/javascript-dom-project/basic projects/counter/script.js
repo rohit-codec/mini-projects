@@ -14,6 +14,8 @@ increase.addEventListener("click", function () {
     value++;
 
     count.textContent = value;
+    count.style.color=value%2==0 ?"red":"blue";
+    
 
 });
 
@@ -24,6 +26,7 @@ decrease.addEventListener("click", function () {
     value--;
 
     count.textContent = value;
+    count.style.color=value%2==0 ?"red":"blue";
 
 });
 
@@ -34,5 +37,5 @@ reset.addEventListener("click", function () {
     value = 0;
 
     count.textContent = value;
-
+    count.style.color="black";
 });
