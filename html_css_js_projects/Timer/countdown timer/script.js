@@ -77,9 +77,13 @@ startBtn.addEventListener("click", function () {
 
             totalSeconds = 0;
 
+            // First show 00:00:00
             updateTimer();
 
-            alert("Time's up!");
+            // Then show alert
+            setTimeout(function () {
+                alert("Time's up!");
+            }, 100);
 
         }
 
