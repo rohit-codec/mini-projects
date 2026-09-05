@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    background-color: #f5f5f5;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   PARENT
+========================= */
+
+.parent {
+    position: fixed;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    padding: 10px;
+
+    z-index: 1000;
+}
+
+
+/* =========================
+   POSITION CLASSES
+========================= */
+
+.left-5 {
+    left: 20px;
+}
+
+.right-5 {
+    right: 20px;
+}
+
+.top-5 {
+    top: 20px;
+}
+
+.bottom-5 {
+    bottom: 20px;
+}
+
+
+/* =========================
+   TOAST
+========================= */
+
+.toast {
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    border-radius: 6px;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================
+   THEMES
+========================= */
+
+.toast.dark {
+    background-color: #374151;
+
+    color: white;
+}
+
+.toast.light {
+    background-color: #f3f4f6;
+
+    color: #111827;
+}
