@@ -18,6 +18,11 @@ textarea {
     padding: 10px;
     margin-bottom: 10px;
 }
+ 
+textarea:focus {
+    outline: none;
+    border: 2px solid #007BFF;
+}
 
 button {
     padding: 10px 15px;
@@ -26,6 +31,9 @@ button {
 }
 
 .note {
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
     background: #eee;
     padding: 15px;
     margin-top: 15px;
